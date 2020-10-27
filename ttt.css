@@ -1,0 +1,94 @@
+html, body, figure, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 387px;
+  border: 2px solid lightgrey;
+}
+
+li {
+  width: 125px;
+  height: 125px;
+  border: 2px solid lightgrey;
+  background: #99ccff;
+  cursor: grab;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 30px;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+li:hover {
+  background: #d9d9d9;
+}
+
+.x,
+.o {
+  background:#ffffcc;
+  cursor: default;
+}
+
+.x:hover,
+.o:hover {
+  background: #ffffcc;
+}
+
+.x:after,
+.o:after {
+  display: block;
+  width: 100%;
+  font-size: 70px;
+  line-height: 120px;
+}
+
+.x:after {
+  content: "X";
+}
+
+.o:after {
+  content: "O";
+}
+
+.game-over li {
+  color: red;
+  cursor: default;
+  background:#ffffcc;
+}
+
+.winner-X .x,
+.winner-O .o {
+  background: #99ccff;
+  color: #ffffcc;
+}
+
+.restart {
+  width: 110px;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.restart:hover {
+  cursor: pointer;
+}
+
+figcaption {
+  font-size: 35px;
+}
